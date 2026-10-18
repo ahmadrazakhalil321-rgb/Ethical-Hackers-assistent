@@ -86,7 +86,7 @@ gemini_api_key = st.secrets.get("GEMINI_API_KEY", api_key_input)
 if not gemini_api_key:
     st.sidebar.warning("⚠️ Enter your Gemini API Key to activate SpectreOps AI.")
 
-# Navigation Menu Options
+# Navigation Menu Options (Syntax-Corrected)
 selected_option = option_menu(
     menu_title=None,
     options=["Target Recon & Profiler", "Kill Chain & ATT&CK Planner", "Payload & Evasion Audit", "Report Generator"],
@@ -94,7 +94,7 @@ selected_option = option_menu(
     default_index=0,
     orientation="horizontal",
     styles={
-        "container": {"padding": "0!important", "background-color": #1a1c23"},
+        "container": {"padding": "0!important", "background-color": "#1a1c23"},
         "icon": {"color": "#ff4d4d", "font-size": "16px"},
         "nav-link": {"font-size": "14px", "text-align": "center", "margin": "0px", "--hover-color": "#262933"},
         "nav-link-selected": {"background-color": "#8b0000", "color": "#ffffff"},
